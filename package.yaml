@@ -1,0 +1,43 @@
+name: pancake
+version: 0.1.0.0
+github: "willdoescode/pancake"
+license: BSD3
+author: "William Lane"
+maintainer: "williamlane923@gmail.com"
+copyright: "2021 William Lane"
+
+extra-source-files:
+  - README.md
+
+synopsis: "Pancake!"
+
+description: Please see the README on GitHub at <https://github.com/willdoescode/pancake#readme>
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  pancake-exe:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - pancake
+
+tests:
+  pancake-test:
+    main: Spec.hs
+    source-dirs: test
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - pancake
+      - hspec >= 2.7.10
