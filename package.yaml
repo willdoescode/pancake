@@ -29,6 +29,7 @@ executables:
       - -with-rtsopts=-N
     dependencies:
       - pancake
+      - vector-sized <= 1.5.0
 
 tests:
   pancake-test:

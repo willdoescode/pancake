@@ -44,6 +44,7 @@ executable pancake-exe
   build-depends:
       base >=4.7 && <5
     , pancake
+    , vector-sized <=1.5.0
   default-language: Haskell2010
 
 test-suite pancake-test
