@@ -25,7 +25,7 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Expr
   other-modules:
       Paths_pancake
   hs-source-dirs:
